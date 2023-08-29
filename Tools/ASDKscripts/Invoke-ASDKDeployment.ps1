@@ -23,7 +23,7 @@ Param (
       "AAD"
     )]
     [string]
-    $DeploymentType = "NoDeployment",
+    $DeploymentType = "ADFS",
 
 	[Parameter(Mandatory = $true, ParameterSetName='AADSet')]
 	[string]
