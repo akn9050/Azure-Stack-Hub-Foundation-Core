@@ -64,12 +64,6 @@
 				"description": "SKU for the Public IP used to access the Virtual Machine."
 			}
 		},
-		"vhdUri": {
-			"type": "string",
-			"metadata": {
-				"description": "The url for Cloudbuilder.vhd in the subscription"
-			}
-		},
 		"vmSize": {
 			"type": "string",
 			"defaultValue": "Standard_E20s_v3",
@@ -98,7 +92,7 @@
 		},
 		"AzureDirectoryTenantName": {
 			"type": "string",
-			"defaultValue": "yourtenant.onmicrosoft.com",
+			"defaultValue": "mochol200201.onmicrosoft.com",
 			"metadata": {
 				"description": "<yourtenant.onmicrosoft.com> can only contain A-Z, a-z, 0-9, dots and a hyphen, please provide while DeploymentType is AAD"
 			}
