@@ -149,23 +149,6 @@
 	},
 	"resources": [
 		{
-			"type": "Microsoft.Compute/images",
-			"name": "[variables('imageName')]",
-			"apiVersion": "2020-06-01",
-			"location": "[parameters('location')]",
-			"properties": {
-				"storageProfile": {
-					"osDisk": {
-						"osType": "Windows",
-						"osState": "Generalized",
-						"blobUri": "[parameters('vhdUri')]",
-						"storageAccountType": "Premium_LRS"
-					}
-				},
-				"hyperVGeneration": "2"
-			}
-		},
-		{
 			"type": "Microsoft.Network/publicIPAddresses",
 			"apiVersion": "2020-06-01",
 			"name": "[parameters('publicIPName')]",
@@ -288,7 +271,7 @@
 				},
 				"storageProfile": {
 					"imageReference": {
-						"id": "[resourceId('Microsoft.Compute/Images', variables('imageName'))]"
+						"id": "/subscriptions/e2ee6274-c6e3-4df1-b3d2-79107c10f7b0/resourceGroups/cloudlab-mgmt/providers/Microsoft.Compute/galleries/mocImageGallery/images/az-600/versions/1.0.0"
 					},
 					"osDisk": {
 						"createOption": "FromImage",
