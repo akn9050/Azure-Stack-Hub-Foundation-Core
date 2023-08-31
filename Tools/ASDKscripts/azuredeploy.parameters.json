@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "AADUserName": {
+      "value": "amit.kumar@mochol200201.onmicrosoft.com"
+    },
+    "AADPassword": {
+      "value": "gham@123"
+    },
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPassword": {
+      "value": "Pa55w.rd1234"
+    },
+    "AzureDirectoryTenantName": {
+      "value": "mochol200201.onmicrosoft.com"
+    }
+  }
+}
