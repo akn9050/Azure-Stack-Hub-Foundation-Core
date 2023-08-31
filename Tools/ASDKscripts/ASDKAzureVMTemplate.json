@@ -138,7 +138,6 @@
 		"subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
 		"networkSecurityGroupName": "[concat(parameters('vmName'),'-NSG')]",
 		"extensionFileLocation": "https://raw.githubusercontent.com/Azure-Samples/Azure-Stack-Hub-Foundation-Core/master/Tools/ASDKscripts/Invoke-ASDKDeployment.ps1",
-		"imageName": "[concat(parameters('vmName'),'-image')]",
 		"doubleQuote": "\""
 	},
 	"resources": [
@@ -240,7 +239,6 @@
 			"location": "[parameters('location')]",
 			"dependsOn": [
 				"[resourceId('Microsoft.Network/networkInterfaces', variables('nicName'))]",
-				"[resourceId('Microsoft.Compute/images/', variables('imageName'))]"
 			],
 			"properties": {
 				"priority": "Spot",
