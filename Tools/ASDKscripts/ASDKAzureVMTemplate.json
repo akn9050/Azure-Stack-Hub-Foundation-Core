@@ -241,11 +241,6 @@
 				"[resourceId('Microsoft.Network/networkInterfaces', variables('nicName'))]",
 			],
 			"properties": {
-				"priority": "Spot",
-                "evictionPolicy": "Deallocate",
-                "billingProfile": {
-                    "maxPrice": -1
-                },
 				"hardwareProfile": {
 					"vmSize": "[parameters('vmSize')]"
 				},
